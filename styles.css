@@ -16,6 +16,7 @@ h1 {
     color: white; /* Color del texto */
 }
 
+
 /* Estilo para el cuerpo de la página */
 body {
     background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgb(91, 38, 161) 50%, rgba(0,212,255,1) 100%);
@@ -130,12 +131,11 @@ h3 {
     }
 }
 
-/* Estilo para el formulario de registro */
+
 .registerForm {
     width: 100%; /* Ancho completo del contenedor */
 }
 
-/* Contenedor del formulario de registro */
 .register-container-fluid {
     width: 90%; /* Ancho relativo */
     max-width: 400px; /* Ancho máximo para pantallas grandes */
@@ -144,7 +144,8 @@ h3 {
     border-radius: 20px; /* Bordes redondeados */
     margin: 3rem auto; /* Centrado vertical y horizontal */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    color: white; /* Color de texto */
+    color: white;
+    
 }
 
 /* Estilo para las imágenes en el carrusel */
@@ -160,6 +161,26 @@ h3 {
     font-weight: 400; /* Grosor de texto */
     font-size: 4rem; /* Tamaño de texto base escalable */
     color: rgb(255, 255, 255);
+    text-align: center; /* Centra el texto */
+    padding: 1rem; /* Relleno interno */
+}
+
+/* Estilo para las leyendas del carrusel */
+.carousel-caption {
+    
+    text-align: center; /* Texto centrado */
+}
+
+.carousel-caption h3 {
+    font-size: 2.5rem; /* Tamaño del título */
+    margin: 0.5rem 0; /* Espaciado alrededor del título */
+    color: rgb(255, 255, 255); /* Color del texto */
+}
+
+.carousel-caption p a {
+    color: #ffdd57; /* Color del enlace */
+    text-decoration: underline; /* Subrayado */
+    font-size: 1.5rem; /* Tamaño del texto del enlace */
 }
 
 /* Estilo para el botón de peligro en el contenedor */
@@ -169,4 +190,45 @@ h3 {
     padding: 0.5rem; /* Relleno interno */
     border-radius: 5px; /* Bordes redondeados */
     margin-top: 1rem; /* Espaciado superior */
+}
+
+/* Estilos responsivos para el texto en pantallas medianas */
+@media (max-width: 768px) {
+    .container {
+        font-size: 3rem; /* Reduce el tamaño del texto */
+    }
+
+    .container .btn-danger {
+        font-size: 2rem; /* Reduce el tamaño del botón */
+        padding: 0.4rem; /* Ajusta el relleno */
+    }
+
+    .carousel-caption h3 {
+        font-size: 2rem; /* Reduce el tamaño del título */
+    }
+
+    .carousel-caption p a {
+        font-size: 1.2rem; /* Reduce el tamaño del texto del enlace */
+    }
+}
+
+/* Estilos responsivos para el texto en pantallas pequeñas */
+@media (max-width: 480px) {
+    .container {
+        font-size: 2rem; /* Reduce más el tamaño del texto */
+        padding: 0.5rem; /* Reduce el relleno */
+    }
+
+    .container .btn-danger {
+        font-size: 1.5rem; /* Reduce el tamaño del botón */
+        padding: 0.3rem; /* Ajusta el relleno */
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.5rem; /* Reduce el tamaño del título */
+    }
+
+    .carousel-caption p a {
+        font-size: 1rem; /* Reduce el tamaño del texto del enlace */
+    }
 }
