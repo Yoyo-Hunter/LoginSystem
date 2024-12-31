@@ -1,0 +1,172 @@
+/* Importa la fuente "Poppins" con peso 200 desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* Elimina márgenes y rellenos predeterminados, y establece un modelo de caja uniforme */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el encabezado principal */
+h1 {
+    font-size: 3rem; /* Tamaño escalable para pantallas grandes */
+    text-align: center; /* Alineación al centro */
+    margin-top: 1rem; /* Separación superior */
+    color: white; /* Color del texto */
+}
+
+/* Estilo para el cuerpo de la página */
+body {
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgb(91, 38, 161) 50%, rgba(0,212,255,1) 100%);
+    font-family: "Bebas Neue", serif; /* Fuente personalizada */
+    font-weight: 400; /* Grosor de texto */
+    font-size: 1rem; /* Tamaño de texto base escalable */
+}
+
+/* Contenedor principal */
+.container-fluid {
+    width: 90%; /* Ancho relativo */
+    max-width: 400px; /* Ancho máximo para pantallas grandes */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo translúcido */
+    padding: 2rem; /* Relleno interno */
+    border-radius: 20px; /* Bordes redondeados */
+    margin: 3rem auto; /* Centrado vertical y horizontal */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Estilo del formulario */
+.loginForm {
+    width: 100%; /* Ancho completo del contenedor */
+}
+
+/* Estilo para las etiquetas de texto */
+label {
+    font-size: 1.5rem; /* Tamaño de texto para etiquetas */
+}
+
+/* Estilo general para los botones */
+.btn-success,
+.btn-primary {
+    width: 100%; /* Ancho completo */
+    margin: 0.5rem 0; /* Espaciado vertical */
+    font-size: 1.2rem; /* Tamaño de texto */
+    padding: 0.75rem; /* Relleno interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Botón de éxito con gradiente */
+.btn-success {
+    background: linear-gradient(90deg, rgb(78, 209, 187) 0%, rgb(2, 170, 39) 50%, rgb(78, 209, 187) 100%);
+}
+
+/* Botón primario con gradiente */
+.btn-primary {
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgb(91, 38, 161) 50%, rgba(0,212,255,1) 100%);
+}
+
+/* Cambia el color de los botones al pasar el mouse */
+.btn-success:hover {
+    background: rgb(8, 156, 95); /* Cambia a verde más oscuro */
+}
+
+.btn-primary:hover {
+    background: rgb(50, 52, 150); /* Cambia a un azul más oscuro */
+}
+
+/* Estilo para los campos de entrada */
+.form-control {
+    color: black; /* Color del texto */
+    box-shadow: none; /* Sin sombra */
+    padding: 0.5rem; /* Relleno interno */
+    font-size: 1rem; /* Tamaño de texto */
+}
+
+/* Encabezado adicional */
+h3 {
+    text-align: center; /* Alineación centrada */
+    font-size: 1.5rem; /* Tamaño del texto */
+    margin-top: 1rem; /* Espaciado superior */
+}
+
+/* Botón de advertencia con borde */
+.btn-outline-warning {
+    text-align: center; /* Texto centrado */
+    width: 100%; /* Ancho completo */
+    margin: 0.5rem 0; /* Espaciado vertical */
+    font-size: 1.2rem; /* Tamaño de texto */
+    padding: 0.75rem; /* Relleno interno */
+}
+
+/* Estilos para pantallas medianas (hasta 768px) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Tamaño del encabezado reducido */
+    }
+
+    .container-fluid {
+        padding: 1.5rem; /* Menor relleno interno */
+        width: 95%; /* Ancho relativo mayor */
+    }
+
+    label, .btn-success, .btn-primary, .btn-outline-warning {
+        font-size: 1rem; /* Reducir tamaño del texto */
+    }
+}
+
+/* Estilos para pantallas pequeñas (hasta 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem; /* Tamaño del encabezado aún más pequeño */
+    }
+
+    .container-fluid {
+        padding: 1rem; /* Reducir relleno */
+    }
+
+    label, .btn-success, .btn-primary, .btn-outline-warning {
+        font-size: 0.9rem; /* Reducir tamaño del texto */
+    }
+}
+
+/* Estilo para el formulario de registro */
+.registerForm {
+    width: 100%; /* Ancho completo del contenedor */
+}
+
+/* Contenedor del formulario de registro */
+.register-container-fluid {
+    width: 90%; /* Ancho relativo */
+    max-width: 400px; /* Ancho máximo para pantallas grandes */
+    background-color: rgba(22, 1, 1, 0.438); /* Fondo translúcido */
+    padding: 2rem; /* Relleno interno */
+    border-radius: 20px; /* Bordes redondeados */
+    margin: 3rem auto; /* Centrado vertical y horizontal */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    color: white; /* Color de texto */
+}
+
+/* Estilo para las imágenes en el carrusel */
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 60%;
+    margin: auto;
+}
+
+/* Contenedor adicional */
+.container {
+    font-family: "Bebas Neue", serif; /* Fuente personalizada */
+    font-weight: 400; /* Grosor de texto */
+    font-size: 4rem; /* Tamaño de texto base escalable */
+    color: rgb(255, 255, 255);
+}
+
+/* Estilo para el botón de peligro en el contenedor */
+.container .btn-danger {
+    color: rgb(0, 0, 0); /* Color del texto */
+    font-size: 2.5rem; /* Tamaño de texto */
+    padding: 0.5rem; /* Relleno interno */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 1rem; /* Espaciado superior */
+}

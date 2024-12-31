@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags para la codificación de caracteres y la vista responsiva -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Preconexión a fuentes de Google para mejorar el rendimiento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Importación de la fuente Bebas Neue desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- Estilos de Bootstrap (CSS) desde CDN para diseño responsivo y de calidad -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Estilos para los iconos de Bootstrap desde el CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Estilos personalizados -->
+    <link href="./styles.css" rel="stylesheet">
+
+    <!-- Título de la página -->
+    <title>Logged IN</title>
+
+    <!-- Script personalizado para la lógica de la página -->
+    <script type="module" src="main.js"></script>
+
+    <!-- Importación de Bootstrap 3 para funcionalidad adicional de carrusel -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Contenedor principal con texto centrado -->
+    <div class="container text-center mt-5">
+        <h1>Bienvenido</h1>
+        <!-- Muestra el nombre de usuario después de iniciar sesión -->
+        <h4 id="username-display"></h4>
+
+        <h2>Otros de mis proyectos:</h2>
+
+        <!-- Contenedor para el carrusel de imágenes -->
+        <div class="container-car">
+            <br>
+            <div id="theCarousel" class="carousel slide" data-ride="carousel">
+                
+                <!-- Indicadores del carrusel -->
+                <ol class="carousel-indicators">
+                    <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#theCarousel" data-slide-to="1"></li>
+                </ol>
+
+                <!-- Contenedor de las imágenes del carrusel -->
+                <div class="carousel-inner" role="listbox">
+                    
+                    <!-- Primera imagen del carrusel -->
+                    <div class="item active">
+                        <img src="img/hardlog.png" alt="Hardcode Project">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>HARDCODE</h3>
+                            <p><a href="https://hardcodedev.netlify.app/" target="_blank">CLICK HERE TO GO - WEB PAGE</a></p>
+                        </div>
+                    </div>
+                    
+                    <!-- Segunda imagen del carrusel -->
+                    <div class="item">
+                        <img src="img/personal.png" alt="Fotografía personal" width="600" height="424">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>CATALOGO PERSONAL</h3>
+                            <p><a href="https://yoyo-hunter.github.io/index.html" target="_blank">CLICK HERE TO GO - WEB PAGE</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botón para cerrar sesión -->
+            <div>
+                <br>
+                <button type="button" class="btn btn-danger mt-3" id="Boton-logout">Cerrar Sesión</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts para Firebase (Autenticación) -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js"></script>
+
+    <!-- Scripts personalizados -->
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./logout.js"></script>
+
+    <!-- Script de Bootstrap 5 para la funcionalidad de los componentes interactivos -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
